@@ -22,7 +22,8 @@ function read(ascending=false,startAt= 	,endAt=-1){
       var numRatings = snap.child('numberOfRatings').val();
       var pros= snap.child('featuredReview').child('pros').val();
       var cons = snap.child('featuredReview').child('cons').val();
-      var employer = [name,industry,overallRating,cultureRating,careerOpRating,compensationRating,workLifeBalanceRating,numRatings,pros,cons];
+      var logo = snap.child('squareLogo').val();
+      var employer = [name,industry,overallRating,cultureRating,careerOpRating,compensationRating,workLifeBalanceRating,numRatings,pros,cons,logo];
       employerList.push(employer);
     });
     return employerListpl
