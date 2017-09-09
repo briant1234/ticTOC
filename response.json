@@ -1,7 +1,11 @@
 {
+<<<<<<< HEAD
     "status": "OK",
     "success": true,
     "jsessionid": "DA30ABE782DD0F6130F28DEBDF0A9694",
+=======
+    "jsessionid": "F2341DEDA83466D8C8B8D9801D205147",
+>>>>>>> 62963a26a0eed399223265eebea24528faefb583
     "response": {
         "employers": [
             {
@@ -363,6 +367,7 @@
                 "careerOpportunitiesRating": "3.5",
                 "recommendToFriendRating": 75,
                 "featuredReview": {
+<<<<<<< HEAD
                     "headline": "Software engineer",
                     "overall": 4,
                     "overallNumeric": 4,
@@ -375,6 +380,20 @@
                     "location": "",
                     "jobTitle": "Software Engineer Asc",
                     "currentJob": true
+=======
+                    "attributionURL": "http://www.glassdoor.com/Reviews/Employee-Review-Lockheed-Martin-RVW16328208.htm",
+                    "cons": "Low pay, over work, few growth opportunities.",
+                    "currentJob": true,
+                    "headline": "Software engineer",
+                    "id": 16328208,
+                    "jobTitle": "Software Engineer Asc",
+                    "jobTitleFromDb": "Software Engineer Asc",
+                    "location": "",
+                    "overall": 4,
+                    "overallNumeric": 4,
+                    "pros": "Family friendly,  clean  facility, travel opportunities",
+                    "reviewDateTime": "2017-08-12 04:25:39.483"
+>>>>>>> 62963a26a0eed399223265eebea24528faefb583
                 },
                 "ratingDescription": "Satisfied",
                 "seniorLeadershipRating": "3.2",
