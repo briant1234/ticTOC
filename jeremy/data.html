@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang = "en" class="no-js">
+
+<head>
+    <!-- Metadata -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Jeremy Xue">
+    <meta name="keywords" content="Prantl's Bakery, Bakery, Food, Cake">
+    <meta name="description" content="Website for Prantl's Bakery">
+
+    <title>Prantl's Bakery</title>
+
+    <!-- Stylesheets here -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Javascript here-->
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script> 
+    <script type="text/javascript">
+
+    $(function () {
+        $('#purchases-graph').highcharts({
+        chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: 'Cake Sales'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                        style: {
+                            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'Cakes',
+                colorByPoint: true,
+                data: [{
+                    name: 'Burnt Almond Tortes',
+                    y: 56.33
+                }, {
+                    name: 'Lemon Cakes',
+                    y: 24.03,
+                    sliced: true,
+                    selected: true
+                }, {
+                    name: 'Chocolate Cakes',
+                    y: 10.38
+                }, {
+                    name: 'Strawberry Cakes',
+                    y: 4.77
+                }, {
+                    name: 'Vanilla Cakes',
+                    y: 0.91
+                }, {
+                    name: 'Red Velvet Cakes',
+                    y: 0.2
+                }]
+            }]
+        });
+    });
+
+    </script>
+
+    <script type="text/javascript">
+
+    $(function () {
+        $('#other-graph').highcharts({
+        chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: 'Non-cake sales'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                        style: {
+                            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'Cakes',
+                colorByPoint: true,
+                data: [{
+                    name: 'Cupcakes',
+                    y: 90
+                }, {
+                    name: 'Other',
+                    y: 10,
+                    sliced: true,
+                    selected: true
+                }]
+            }]
+        });
+    });
+
+    </script>
+</head>
+
+<body>
+    <header class="cd-header">
+        <div id="cd-logo"><a href="index.html"><img src="images/logos/logowhite.png" alt="Logo" height="80" width="80"></a></div>
+
+        <nav class="cd-primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="storeinfo.html">Store Info</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a class = "selected" href="data.html">Data</a></li>
+            </ul>
+        </nav> <!-- Navigation bar -->
+    </header>
+
+    <section class="cd-hero">
+        <ul class="cd-hero-slider autoplay">
+
+            <li class="selected">
+                <div class="cd-full-width cd-img-container">
+                    <div id="purchases-graph"></div>
+                </div>
+            </li>
+
+            <li>
+                <div class="cd-full-width cd-img-container">
+                <div id="other-graph"></div>
+                </div> 
+            </li>
+
+        </ul> 
+
+        <div class="cd-slider-nav">
+            <nav>
+                <span class="cd-marker item-1"></span>
+                <ul>
+                    <li class="selected"><a href="#0">Cake Sales</a></li>
+                    <li><a href="#0">Other sales</a></li>
+                </ul>
+            </nav> 
+        </div> 
+    </section> 
+ <footer>
+        <hr/>
+        &copy; Made by Jeremy Xue <br/>
+        <a href="mailto:jhxue@andrew.cmu.edu">Email Me</a>
+    </footer>
+
+</body>
+</html>

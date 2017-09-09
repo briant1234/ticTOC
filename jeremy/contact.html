@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang = "en" class="no-js">
+
+<head>
+
+    <!-- Metadata -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Jeremy Xue">
+    <meta name="keywords" content="Prantl's Bakery, Bakery, Food, Cake">
+    <meta name="description" content="Website for Prantl's Bakery">
+
+    <title>Prantl's Bakery</title>
+
+    <!-- Stylesheets here -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/modernizr.js"></script>
+
+
+</head>
+
+<body>
+    <header class="cd-header">
+        <div id="cd-logo"><a href="index.html"><img src="images/logos/logowhite.png" alt="Logo" height="80" width="80"></a></div>
+
+        <nav class="cd-primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="storeinfo.html">Store Info</a></li>
+                <li><a class = "selected" href="contact.html">Contact Us</a></li>
+                <li><a href="data.html">Data</a></li>
+            </ul>
+        </nav> <!-- Navigation Bar -->
+    </header>
+
+
+    <!-- Logos obtained with creative commons license from https://www.iconfinder.com/iconsets/social-circle -->
+    <section class="cd-hero">
+        <ul class="cd-hero-slider autoplay">
+            <li class="selected">
+                <div class="cd-full-width">
+                    <h2>Like us on Facebook!</h2>
+                    <a href="https://www.facebook.com/PrantlsBakery/" target="_blank"><img src="images/fb.svg" height="200" width="200" alt="fb"></a>
+                </div>
+            </li>
+
+            <li>
+                <div class="cd-full-width">
+                    <h2>Follow us on Instagram!</h2>
+                    <a href="https://www.instagram.com/prantls_bakery/" target="_blank"><img src="images/ig.svg" height="200" width="200" alt="ig"></a>
+                </div>
+            </li>
+
+             <li>
+                <div class="cd-full-width">
+                    <h2>Follow us on Twitter!</h2>
+                    <a href="https://twitter.com/prantlsbakery" target="_blank"><img src="images/twit.svg" height="200" width="200" alt="twitter"></a>
+                </div>
+            </li>
+
+        </ul>
+
+        <div class="cd-slider-nav">
+            <nav>
+                <span class="cd-marker item-1"></span>
+                <ul>
+                    <li class="selected"><a href="#0">Facebook</a></li>
+                    <li><a href="#0">Instagram</a></li>
+                    <li><a href="#0">Twitter</a></li>
+                </ul>
+            </nav> 
+        </div> 
+    </section> 
+
+    <main class="cd-main-content">
+    <!-- Contact form -->
+      <h1>Visitor Inquiry</h1>
+      <br/>
+      <form onsubmit="return validate()" enctype="text/plain" method="post" action="mailto:infoneeded@prantlsbakery.com">
+      
+      <fieldset>
+          <label for="uname">Name: (Required) </label> <br/>
+          <input type="text" id="uname" name="uname" Placeholder="Your Name" size="20" maxlength ="250" required><br/><br/>
+          <label for="zip">Please provide your zip code:</label><br/>
+          <input type="text" id="zip" name="zip" value="" Placeholder="xxxxx" ><br/><br/>
+          <label for="email">Please provide your email address: (Required)</label><br/>
+          <input type="email" id="email" name="email" value="" Placeholder = "abc@defg.com" required ><br/><br/>
+      <fieldset>
+          <label fr="message">Message:</label> <br/>
+          <textarea id="message" name="message" value="Type your Message" rows="10" cols="50" maxlength="1000"> </textarea><br/><br/>
+      </fieldset>
+      
+      <fieldset>
+          <label>Please indicate if you want to receive updates via email:</label><br/>
+          <input type="checkbox" id="signup" name="signup" value="yes">Yes, please update me!<br/><br/>
+          <input type ="image" src="images/planesubmit.png" alt="Submit" name= "btnimage" value ="Submit" height="50" width="50">
+      </fieldset>
+      
+      </form>
+      </main>
+
+    <footer>
+        <hr/>
+        &copy; Made by Jeremy Xue <br/>
+        <a href="mailto:jhxue@andrew.cmu.edu">Email Me</a>
+        <!-- Anchor tags can take you to pages outside the site, within the site or within the page. -->
+    </footer>
+
+  <script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
